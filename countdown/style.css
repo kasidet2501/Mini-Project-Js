@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Play&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(chrismasbg.jpg);
+    background-size: cover;
+    /* background-size: 1980px 980px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'Play', sans-serif;
+    color: white;
+    margin-top: 10rem;
+}
+h1{
+    font-size: 6rem;
+}
+.container{
+    width: 60rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+}
+.date{
+    margin-top: -2rem;
+    font-size: 2rem;
+}
+span{
+    font-size: 2rem;
+    
+}
+.countdown-container{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0px -10px;
+    margin-top: -4rem;
+    
+}
+
+.bigtext .p1{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 6rem;
+    text-align: center;
+    box-sizing: border-box;
+    height: 10rem;
+    padding: 10px;
+    backdrop-filter: blur(2px);
+    border: 0.1px solid rgba(255,255,255,0.25);
+    border-radius: 25% 0% 0% 25% ;
+    -webkit-box-shadow: 10.5px 14px 8.5px 3px #7a5151;
+    -moz-box-shadow: 10.5px 14px 8.5px 3px #ddbfbf;
+    box-shadow: 10.5px 14px 8.5px 3px #58584f;
+    padding-top: 0.5cm;
+}
+.bigtext .p2{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 6rem;
+    text-align: center;
+    box-sizing: border-box;
+    height: 10rem;
+    padding: 10px;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 0% 0% 0% 0% ;
+    -webkit-box-shadow: 10.5px 14px 8.5px 3px #7a5151;
+    -moz-box-shadow: 10.5px 14px 8.5px 3px #ddbfbf;
+    box-shadow: 10.5px 14px 8.5px 3px #58584f;
+    padding-top: 0.5cm;
+}
+.bigtext .p3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 6rem;
+    text-align: center;
+    box-sizing: border-box;
+    height: 10rem;
+    padding: 10px;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 0% 0% 0% 0% ;
+    -webkit-box-shadow: 10.5px 14px 8.5px 3px #7a5151;
+    -moz-box-shadow: 10.5px 14px 8.5px 3px #ddbfbf;
+    box-shadow: 10.5px 14px 8.5px 3px #58584f;
+    padding-top: 0.5cm;
+}
+.bigtext .p4{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 6rem;
+    text-align: center;
+    box-sizing: border-box;
+    height: 10rem;
+    padding: 10px;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 0% 25% 25% 0% ;
+    -webkit-box-shadow: 10.5px 14px 8.5px 3px #7a5151;
+    -moz-box-shadow: 10.5px 14px 8.5px 3px #ddbfbf;
+    box-shadow: 10.5px 14px 8.5px 3px #58584f;
+    padding-top: 0.5cm;
+}
+
+
+.box-range{
+    padding: 0px 10px;
+    width: 25%; 
+}
+.descrip{
+    text-align: center;
+    margin-top: -4rem;
+
+}
+
+
+.glitch-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: #222; */
+ }
+ 
+ .glitch {
+    position: relative;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 5px;
+    z-index: 1;
+ }
+ 
+ .glitch:before,
+ .glitch:after {
+    display: block;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+ }
+ 
+ .glitch:before {
+    animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #0ff;
+    z-index: -1;
+ }
+ 
+ .glitch:after {
+    animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #ff00ff;
+    z-index: -2;
+ }
+ 
+ @keyframes glitch-color {
+    0% {
+       transform: translate(0);
+    }
+ 
+    20% {
+       transform: translate(-3px, 3px);
+    }
+ 
+    40% {
+       transform: translate(-3px, -3px);
+    }
+ 
+    60% {
+       transform: translate(3px, 3px);
+    }
+ 
+    80% {
+       transform: translate(3px, -3px);
+    }
+ 
+    to {
+       transform: translate(0);
+    }
+ }
