@@ -31,15 +31,18 @@ body{
     flex-direction: row;
     width: 900px;
     height: 150px;
-    background-image: linear-gradient( 68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2% );
+    background-image: radial-gradient( circle 897px at 9% 80.3%,  rgba(55,60,245,1) 0%, rgba(234,161,15,0.90) 100.2% );
     margin-left: -12px;
     align-items: center;
 }
 .buttom{
+    display: flex;
     width: 900px;
     height: 550px;
     background-color: #F0FFFF;
     margin-left: -12px;
+    align-items: center;
+    justify-content: center;
 }
 .correct{
     display: flex;
@@ -102,13 +105,15 @@ body{
     /* background-color: aqua; */
     text-align: start;
     font-size: 18px;
+    padding-top: -0.5rem;
+    padding-left: 1.5rem;
     width: 700px;
-    height: 150px;
+    /* height: 150px; */
 }
 .question p{
     padding-top: 2rem;
-    padding-left: 2rem;
-    font-size: 1.2rem;
+    padding-left: 1.3rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -119,7 +124,7 @@ body{
 .answer{
     display: block;
     margin: 5rem;
-    margin-top: -0.2rem;
+    margin-top: 2rem;
 }
 .label {
     display: flex;
@@ -183,3 +188,42 @@ body{
   .radio-input:checked~.label-text {
     color: hsl(0, 0%, 40%);
   }
+
+  /* Button */
+.continue{
+  margin-top: 28rem;
+}
+
+  button {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica,"sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #cfef00;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  button:hover {
+    background: #c4e201;
+  }
+  
+  button > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+  }
+  
+  button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  
