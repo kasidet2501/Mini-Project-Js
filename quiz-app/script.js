@@ -76,9 +76,12 @@ function setRadioValue() {
 button.addEventListener('click',() => {
     console.log(quizData.length);
     if(currentQues != quizData.length-1){
+        currentQues++;
         nextQuiz();
+        
     }
     else{
+        currentQues++;
         checkAnswer();
         quiz.innerHTML = `
                 <br><br><br><br><br><br><br>
@@ -89,12 +92,12 @@ button.addEventListener('click',() => {
     }
 
     checkAnswer();
-    currentQues++;
+    // currentQues++;
 });
 
 function checkAnswer(){
     const selected = document.querySelector('input[name="answer"]:checked');
-    const currentQuiz = quizData[currentQues];
+    const currentQuiz = quizData[currentQues-1];
     const Ans = currentQuiz.correct;
     console.log("selected:",selected.id," Answer:",Ans);
 
